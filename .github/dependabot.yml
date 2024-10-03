@@ -4,7 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    target-branch: "0.x"
+    target-branch: "1.x"
     allow:
       - dependency-type: "direct"
     labels:
@@ -19,7 +19,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    target-branch: "0.x"
+    target-branch: "1.x"
     allow:
       - dependency-type: "direct"
     labels:
@@ -34,7 +34,7 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-    target-branch: "0.x"
+    target-branch: "1.x"
     allow:
       - dependency-type: "direct"
     labels:

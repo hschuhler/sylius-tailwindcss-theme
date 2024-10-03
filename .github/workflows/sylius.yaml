@@ -3,6 +3,7 @@ name: Install & Test
     push:
         branches:
             - 0.x
+            - 1.x
         paths-ignore:
             - README.md
     pull_request:
@@ -18,7 +19,7 @@ jobs:
                 php:
                     - 8.2
                 sylius:
-                    - 1.12.6
+                    - 1.13.0
                 symfony:
                     - 6.4
                 node:
@@ -59,9 +60,6 @@ jobs:
                 name: 'Composer - Create cache directory'
                 run: 'mkdir -p /home/runner/.composer/cache'
                 if: 'steps.cache-composer.outputs.cache-hit != ''true'''
-            -
-                name: 'Composer - Github Auth'
-                run: 'composer config -g github-oauth.github.com ${{ github.token }}'
                 
             -   name: Cache node modules
                 id: cache-npm

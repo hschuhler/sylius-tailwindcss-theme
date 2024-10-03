@@ -13,8 +13,8 @@ COMPOSER_CI=cd ./install/Application && composer
 NPM_CI=cd ./install/Application && npm
 
 
-install-ci: sylius-ci ## Install Plugin on Sylius [SYLIUS_VERSION=1.12.13] [SYMFONY_VERSION=6.4]
-install-docker: sylius-docker ## Install Plugin on Sylius [SYLIUS_VERSION=1.12.13] [SYMFONY_VERSION=6.4]
+install-ci: sylius-ci ## Install Plugin on Sylius [SYLIUS_VERSION=1.30.0] [SYMFONY_VERSION=6.4]
+install-docker: sylius-docker ## Install Plugin on Sylius [SYLIUS_VERSION=1.30.0] [SYMFONY_VERSION=6.4]
 .PHONY: install
 
 reset-ci: ## Remove dependencies

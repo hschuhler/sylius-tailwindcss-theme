@@ -5,25 +5,45 @@ SHELL=/bin/bash
 -include .makefile/global.mk
 
 ###
-### ENV VERSIONS
+### VERSIONS
 ### ¯¯¯
 
-SYLIUS_VERSION=1.12.6
+SYLIUS_VERSION=1.13.0
 SYMFONY_VERSION=6.4
+COMPOSE_PROJECT_NAME=sylius-happy-cms-plugin
+
 PLUGIN_NAME=agence-adeliom/sylius-tailwindcss-theme
 PLUGIN_DIR=themes/TailwindTheme
+PLUGIN_NAMESPACE=SyliusTailwindcssPlugin
+PLUGIN_URL=git@github.com:agence-adeliom/sylius-tailwindcss-theme.git
+PLUGIN_ALIAS=sylius_tailwindcss
+
+DOCKER_USER ?= "$(shell id -u):$(shell id -g)"
+ENV ?= "dev"
+DOCKER_PHP_PORT ?= 8052
+DOCKER_MYSQL_PORT ?= 63503
 
 ###
-### DEVELOPMENT : make command used  when you test or contribute
+### CI
+### Commands to install sylius standard version and this plugin automatically (in github workflow)
+### ¯¯¯¯¯¯¯¯¯¯¯
+
+-include .makefile/ci.mk
+
+###
+### DEV
+### Commands to install sylius standard version and this plugin automatically
 ### ¯¯¯¯¯¯¯¯¯¯¯
 
 -include .makefile/dev.mk
 
 ###
-### CI : make command used by github workflow
+### QA
+### Commands to test the code quality
+### ex: make test.all
 ### ¯¯¯¯¯¯¯¯¯¯¯
 
--include .makefile/ci.mk
+-include .makefile/qa.mk
 
 
 

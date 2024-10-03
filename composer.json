@@ -15,7 +15,7 @@
         "symfony/webpack-encore-bundle": "^1.12",
         "ext-json": "*",
         "ext-intl": "*",
-        "sylius/sylius": ">=1.8 <1.13"
+        "sylius/sylius": ">=1.13 <1.14"
     },
     "require-dev": {
         "behat/behat": "^3.13.0",
@@ -50,7 +50,7 @@
             "title": "Sylius Tailwind Theme"
         },
         "branch-alias": {
-            "dev-master": "0.x-dev"
+            "dev-master": "1.x-dev"
         }
     },
     "config": {
