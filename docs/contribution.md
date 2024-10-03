@@ -19,12 +19,6 @@ https://getcomposer.org/doc/articles/authentication-for-private-packages.md#gith
 
 `make tests.all`
 
-### Build or watch theme
-
-`make build-theme`
-`make watch-theme`
-The root directory is mounted as a volume into the sylius standard installed project, you can directly modify you're versionned files and see changes after refreshing your navigator.
-
 ### List all available commands
 
 `make help`
