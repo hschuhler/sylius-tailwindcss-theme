@@ -25,3 +25,6 @@
 
 /* Product page */
 @import url("./Product/index.css");
+
+/* Navigation page */
+@import url("./Navigation/index.css");
