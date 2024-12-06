@@ -1,0 +1,27 @@
+<div class="col-span-full md:col-span-6 lg:col-span-3 text-center lg:text-center">
+    <div class="mb-3 font-medium">Payment methods:</div>
+
+    <div class="grid grid-cols-3 gap-6 mb-4">
+        <div class="col-span-1"> 
+            <a href="https://sylius.com/partner/paypal/" target="_blank" class="block border rounded p-2">
+                <img class="img-fluid" src="{{ asset('build/shop/images/paypal-logo.svg', 'shop') }}" alt="PayPal" />
+            </a>
+        </div>
+        <div class="col-span-1">
+            <a href="https://sylius.com/partner/adyen/" target="_blank" class="block border rounded p-2">
+                <img class="img-fluid" src="{{ asset('build/shop/images/adyen-logo.svg', 'shop') }}" alt="Adyen" />
+            </a>
+        </div>
+        <div class="col-span-1">
+            <a href="https://sylius.com/partner/mollie/" target="_blank" class="block border rounded p-2">
+                <img class="img-fluid" src="{{ asset('build/shop/images/mollie-logo.svg', 'shop') }}" alt="Mollie" />
+            </a>
+        </div>
+    </div>
+
+    <div class="flex justify-center lg:justify-center gap-3 mb-5 text-base-conent">
+        <a class="link-reset" href="#">{{ ux_icon('tabler:brand-instagram', { class: 'icon icon-md' }) }}</a>
+        <a class="link-reset" href="#">{{ ux_icon('tabler:brand-facebook', { class: 'icon icon-md' }) }}</a>
+        <a class="link-reset" href="#">{{ ux_icon('tabler:brand-x', { class: 'icon icon-md' }) }}</a>
+    </div>
+</div>

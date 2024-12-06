@@ -1,0 +1,6 @@
+{% set taxon = hookable_metadata.context.taxon %}
+
+<a class="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    {{ taxon.name }}
+    <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+</a>
