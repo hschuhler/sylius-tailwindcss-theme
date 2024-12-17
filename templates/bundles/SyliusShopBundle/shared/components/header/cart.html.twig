@@ -3,11 +3,6 @@
 {% import "@SyliusShop/shared/macro/money.html.twig" as money %}
 
 <div class="relative" {{ attributes }}>
-    <div data-loading>
-        <div class="sylius-shop-loader">
-            <img src="{{ asset('build/shop/images/loader.gif', 'shop') }}" alt="{{ 'sylius.ui.loading'|trans }}" loading="lazy"/>
-        </div>
-    </div>
     <div {{ sylius_test_html_attribute('cart-button') }}>
         <button class="flex items-center gap-2 px-0 relative" js-cart-opener>
             <i class="fa-solid fa-cart-shopping"></i>
