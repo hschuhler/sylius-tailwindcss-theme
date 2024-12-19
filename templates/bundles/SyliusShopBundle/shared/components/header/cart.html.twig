@@ -11,9 +11,9 @@
                 {{- 'sylius.ui.item.choice'|trans({'%count%': cart.totalQuantity}) }}
         </span>
             {% if cart.totalQuantity > 0 %} 
-                <span class="absolute top-0 start-0 badge rounded-full bg-primary">
-                {{ cart.totalQuantity }}
-            </span>
+                <span class="absolute top-1/2 text-xs w-4 h-4 flex itesm-center justify-center left-2 bg-primary rounded-full">
+                    {{ cart.totalQuantity }}
+                </span>
             {% endif %}
         </button>
     </div>

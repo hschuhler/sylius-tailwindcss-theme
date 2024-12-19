@@ -1,7 +1,8 @@
 {% macro default(url, message, id, icon, class) %}
     <a class="btn {% if class is not empty %}{{ class }}{% endif %}" {% if id is not null %} id="{{ id }}"{% endif %} href="{{ url }}" {{ sylius_test_html_attribute('button', id|default(message)) }}>
         {% if icon is not empty %}
-            {{ ux_icon(icon, { class: 'icon icon-sm flex-shrink-0' }) }}
+            {# {{ ux_icon(icon, { class: 'icon icon-sm flex-shrink-0' }) }} #}
+            <i class="fa-regular {{ icon }}"></i>
         {% endif %}
         {% if message is not empty %}
             {{ message|trans }}
@@ -12,7 +13,8 @@
 {% macro submit(message, id, icon, class, disabled = false) %}
     <button type="submit" class="btn {% if class is not empty %}{{ class }}{% endif %}" {% if id is not null %}id="{{ id }}"{% endif %} {{ sylius_test_html_attribute('button', id|default(message)) }} {% if disabled %}disabled="disabled"{% endif %}>
         {% if icon is not empty %}
-            {{ ux_icon(icon, { class: 'icon icon-sm' }) }}
+            {# {{ ux_icon(icon, { class: 'icon icon-sm' }) }} #}
+             <i class="fa-regular {{ icon }}"></i>
         {% endif %}
         {% if message is not empty %}
             {{ message|trans }}
@@ -23,7 +25,8 @@
 {% macro transparent(url, message, id, icon, class) %}
     <a href="{{ url }}" class="link-reset{% if class is not empty %} {{ class }}{% endif %}"{% if id is not null %} id="{{ id }}"{% endif %} {{ sylius_test_html_attribute('button', id|default(message)) }}>
         {% if icon is not empty %}
-            {{ ux_icon(icon, { class: 'icon icon-sm' }) }}
+            {# {{ ux_icon(icon, { class: 'icon icon-sm' }) }} #}
+            <i class="fa-regular {{ icon }}"></i>
         {% endif %}
         {% if message is not empty %}
             {{ message|trans }}
