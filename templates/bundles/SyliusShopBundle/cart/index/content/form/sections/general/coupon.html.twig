@@ -2,7 +2,7 @@
 {% set form_promotion_coupon = form.promotionCoupon %}
 
 {% if form_promotion_coupon is defined %}
-    <div class="mb-4">
+    <div class="my-4">
         <div class="p-4 bg-neutral rounded">
             <div class="" {{ sylius_test_html_attribute('cart-promotion-coupon') }}>
                 {% if form_promotion_coupon.vars.value is not empty and form_promotion_coupon.vars.valid %}
@@ -24,7 +24,7 @@
                 {% else %}
                     <div class="join field">
                         {{ form_widget(form_promotion_coupon, sylius_test_form_attribute('cart-promotion-coupon-input')|sylius_merge_recursive({'attr': {'data-model': 'norender|sylius_shop_cart[promotionCoupon]', 'form': form.vars.id, 'placeholder': 'sylius.ui.enter_your_code'|trans ~ '...', 'class': 'input input-bordered join-item'}})) }}
-                        <button class="btn btn-outline btn join-item rounded-r-full" type="button" {{ sylius_test_html_attribute('apply-coupon-button') }} data-action="live#$render">{{ 'sylius.ui.apply_coupon'|trans }}</button>
+                        <button class="btn btn-outline join-item rounded-r-lg" type="button" {{ sylius_test_html_attribute('apply-coupon-button') }} data-action="live#$render">{{ 'sylius.ui.apply_coupon'|trans }}</button>
                     </div>
                     <div>{{ form_errors(form_promotion_coupon) }}</div>
                 {% endif %}
